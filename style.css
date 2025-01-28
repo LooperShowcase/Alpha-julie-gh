@@ -1,0 +1,116 @@
+/* General styles */
+body {
+    background-color: lightblue;
+    color: rgb(74, 49, 77);
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+h1 {
+    color: rgb(221, 204, 238);
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+h2 {
+    color: rgb(220, 238, 209);
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+p {
+    color: rgb(66, 158, 166);
+    line-height: 1.5;
+    margin: 10px 20px;
+}
+
+/* Navbar styles */
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #333;
+    justify-content: space-around;
+}
+
+#nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav a:hover {
+    background-color: #111;
+}
+
+/* Section styles */
+#jj {
+    background-color: rgb(168, 193, 219);
+    padding: 20px;
+}
+
+#ff {
+    background-color: rgb(35, 77, 92);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav a {
+        padding: 10px 0;
+    }
+
+    #ff, #jj {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    #navbar {
+        flex-direction: column;
+    }
+
+    #nav a {
+        font-size: 0.9rem;
+        padding: 8px 0;
+    }
+}
